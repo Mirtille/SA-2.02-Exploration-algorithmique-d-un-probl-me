@@ -7,4 +7,12 @@ public class Arc {
         this.dest = dest;
         this.cout = cout;
     }
+
+    public String getDest() {
+        return dest;
+    }
+
+    public double getCout() {
+        return cout;
+    }
 }

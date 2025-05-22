@@ -10,7 +10,6 @@ public class Main {
         g.ajouterArc("D", "C", 10);
         g.ajouterArc("E", "D", 43);
 
-        // Affichage du graphe
         for (String noeud : g.listeNoeuds()) {
             System.out.print(noeud + " -> ");
             for (Arc a : g.suivants(noeud)) {

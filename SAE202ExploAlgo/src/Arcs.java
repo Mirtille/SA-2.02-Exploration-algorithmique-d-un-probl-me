@@ -6,14 +6,14 @@ public class Arcs {
     private List<Arc> arcs;
 
     public Arcs(){
-        this.arcs = new arrayList<>();
+        this.arcs = new ArrayList<>();
     }
 
     public void ajouterArc(Arc a){
         this.arcs.add(a);
     }
 
-    public List<Arc> getArcs() {
+    public List<Arc> getArcs(){
         return this.arcs;
     }
 }
