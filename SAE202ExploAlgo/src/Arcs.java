@@ -6,7 +6,7 @@ public class Arcs {
     private List<Arc> arcs;
 
     public Arcs(){
-        this.arcs<> = new arrayList<>();
+        this.arcs = new arrayList<>();
     }
 
     public void ajouterArc(Arc a){
