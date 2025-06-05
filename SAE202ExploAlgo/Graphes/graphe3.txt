@@ -1,0 +1,7 @@
+A	B	5
+A	C	10
+B	D	2
+C	D	1
+D	E	3
+E	F	4
+C	F	15

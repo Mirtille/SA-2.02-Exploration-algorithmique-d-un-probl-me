@@ -1,3 +1,5 @@
+import java.util.*;
+
 /**
  * Classe fournie, permet de stocker des valeurs associées au noeud et
  * des parents
@@ -37,7 +39,6 @@ public class Valeurs {
  * @param nom nom du noeud
  * @param parent nom du noeud parent associe
  */
-9
     public void setParent(String nom, String parent) {
         this.parent.put(nom, parent);
     }
@@ -77,8 +78,20 @@ public class Valeurs {
             Double valeurNoeud = valeur.get(s);
             String noeudParent = parent.get(s);
             res += s + " -> V:" + valeurNoeud + " p:" + noeudParent + "\n";
-            10
         }
         return res;
+    }
+
+    public List<String> calculerChemin(String destination) {
+        List<String> chemin = new ArrayList<>();
+        String courant = destination;
+
+        while (courant != null) {
+            chemin.add(courant);
+            courant = this.getParent(courant);
+        }
+
+        Collections.reverse(chemin); // pour avoir le chemin dans l'ordre départ → arrivée
+        return chemin;
     }
 }
